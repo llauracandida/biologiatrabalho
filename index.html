@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
 <title>Gametogênese 3D</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -16,11 +17,21 @@
     font-family:'Poppins',sans-serif;
 }
 
-body{
-    background:#0F172A;
-    color:white;
+/* Computador */
+body {
+  background: white;
 }
 
+/* Celular */
+@media (max-width: 768px) {
+  body {
+    background: lightgray;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
 header{
     position:fixed;
     top:0;
@@ -363,6 +374,11 @@ background:#020617;
 
 border:1px solid rgba(56,189,248,.3);
 
+}
+    .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 }
 
